@@ -1,0 +1,420 @@
+
+/*Fonts*/
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/FilsonSoft-Regular.otf");
+}
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/FilsonSoft-Bold.otf");
+    font-weight: bold;
+}
+@font-face {
+    font-family: "Filson Soft Book";
+    src: url("../fonts/FilsonSoft-Book.otf");
+}
+@font-face {
+    font-family: "Filson Soft";
+    src: url("../fonts/FilsonSoft-Light.otf");
+    font-weight: lighter;
+
+}
+
+/*onboarding styles*/
+
+
+.styled-card {
+    box-shadow: 6px 6px 12px 0 rgba(0,0,0,0.35);
+    background: #FBFBFB !important;
+    border-radius: 10px;
+    height: 300px;
+    margin: 1rem;
+    position: relative;
+    width: 300px;
+    color: #576258;
+
+}
+
+.card-placement {
+    min-width: 87.5vw;
+    max-width: 87.5vw;
+    height:auto;
+    min-height: 45vh;
+    margin-left:4vw;
+}
+
+#card-logo{
+    max-width:17%;
+    max-height: auto;
+
+    /*max width does not work in chrome*/
+}
+
+
+.card-img {
+    max-height: 20vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+}
+
+
+
+/* Rectangle 11: */
+/* Whom is this Montage: */
+
+
+
+
+
+
+/*shared styles*/
+img {
+    /*width: 100px;*/
+}
+
+p{
+    font-family: "Filson Soft";
+    text-left;
+}
+
+
+
+/*index.html styles*/
+.big-contain {
+    width: 100vw;
+    background-size: cover;
+
+
+}
+
+#menu-data{
+    display: hide;
+}
+
+#top-nav {
+    margin-top: 1.6rem;
+}
+
+#hero-image {
+    height: 65vh;
+    width: 100vw;
+    background: url("../images/hero_wide.jpg") no-repeat center center;
+    background-size: cover;
+    margin-bottom: 8rem;
+}
+
+#hero-2 {
+    height: 65vh;
+    width: 100vw;
+    background: url("../images/phone_wide.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#logo {
+    float: left;
+    text-align: left;
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+    width: 15rem;
+    margin-bottom: 7rem ;
+}
+
+
+@media (min-width: 576px) {
+    .hero-text {
+        font-size: 7vh;
+        color: white;
+        font-weight: bold;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        line-height: 110%;
+        margin-top: 30vh;
+
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-text{
+        color: white;
+        font-weight: bold;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        margin-top: 30vh;
+        line-height: 110%;
+        font-size: 40px;
+        margin-bottom: 1rem;
+
+    }
+}
+
+@media (min-width: 576px) {
+    #hero-text-box {
+        height: 65vh;
+        width: 100vw;
+
+
+    }
+}
+    @media (max-width: 575px) {
+        #hero-text-box {
+            height: 65vh;
+            width: 100vw;
+
+        }
+
+}
+
+#services {
+    text-align: center;
+    margin-left: 4rem;
+    margin-right: 4rem;
+    margin-bottom: 8rem;
+
+}
+
+.service-images {
+    margin-bottom: 2rem;
+    padding-right:2rem;
+    max-width: 14rem;
+    display: block;
+}
+
+.service-text {
+    margin-top: 2rem;
+    font-size: 13pt;
+    padding-right:2rem;
+    font-family: "Filson Soft Book";
+
+}
+
+#testi-box {
+    margin-bottom: 40vh;
+}
+
+
+
+.action-button {
+    background: #11B61B;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 100px;
+    font-family: "Filson Soft Book";
+    font-size: 23px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    max-width: 85vw;
+    max-height: 2rem   ;
+    height: auto;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    vertical-align: middle;
+    border-width: 0rem;
+    line-height:0;
+    padding: 20rem;
+
+}
+
+@media (max-width: 575px) {
+    .get-started {
+        background: #11B61B;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+        border-radius: 100px;
+        font-family: "Filson Soft Book";
+        font-size: 10px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        /* max-width: 85vw; */
+        /* max-height: 2rem; */
+        height: auto;
+        margin-right: 1vw;
+        margin-bottom: 2vh;
+        vertical-align: middle;
+        border-width: 0rem;
+        /* line-height: 0; */
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 3px;
+        padding-top: 4px;
+
+    }
+
+    .action-button {
+        background: #11B61B;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+        border-radius: 100px;
+        font-family: "Filson Soft Book";
+        font-size: 10px;
+        color: #FFFFFF;
+        letter-spacing: 0;
+        /* max-width: 85vw; */
+        /* max-height: 2rem; */
+        height: auto;
+        margin-right: 1vw;
+        margin-bottom: 2vh;
+        vertical-align: middle;
+        border-width: 0rem;
+        /* line-height: 0; */
+        padding-right: 1rem;
+        padding-left: 1rem;
+        padding-bottom: 3px;
+        padding-top: 4px;
+    }
+}
+
+
+
+.get-started {
+    background: #11B61B;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+    border-radius: 100px;
+    font-family: "Filson Soft Book";
+    font-size: 23px;
+    color: #FFFFFF;
+    letter-spacing: 0;
+    /* max-width: 85vw; */
+    /* max-height: 2rem; */
+    height: auto;
+    margin-right: 1vw;
+    margin-bottom: 2vh;
+    vertical-align: middle;
+    border-width: 0rem;
+    /* line-height: 0; */
+    padding-right:3rem;
+    padding-left:3rem;
+    padding-bottom: .2px;
+    padding-top: .4rem;
+
+}
+
+
+
+#testimonials {
+    margin-left: 4rem;
+    margin-right: 4rem;
+    vertical-align: middle;
+    margin-bottom: 8rem;
+
+}
+
+ .testi{
+     padding-right: 4%;
+     padding-left: 4%;
+     font-size: 13pt;
+ }
+
+ .block-text {
+     max-width: 25vw;
+
+ }
+
+
+.t-image {
+    margin-bottom: 2rem;
+    max-height: 25vh;
+
+}
+
+.nav-text {
+    color: #576258;
+    background: rgba(244, 246, 244, 0.15);
+    border-radius: 5px;
+    font-family: "Filson Soft"";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin-right: 2 rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+
+}
+.nav-text-action {
+
+    color: #F8F8F8;
+    background: #11B61B;
+    border-radius: 5px;
+    font-family: "Filson Soft" ";
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 15px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 1.5rem;
+}
+
+
+@media (max-width: 575px) {
+    .menu-style {
+        background: white;
+        color: #F8F8F8;
+        width: 100vw;
+        min-height: 13vh;
+    }
+
+}
+
+ @media (min-width: 576px) {
+     .menu-style{
+         background: none;
+     }
+ }
+
+#big-items{
+    margin-bottom: 4rem;
+}
+
+#nav-span{
+    width:100vw;
+    height: auto;
+}
+
+@media (min-width: 576px) {
+
+    #nav-span {
+        display: none;
+    }
+}
+
+@media (min-width: 576px) {
+    #small-items {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    #big-items {
+        visibility: hidden;
+    #
+    }
+}
+
+
+
+.navbar-toggler {
+    -webkit-align-self: flex-start;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+    padding: 0
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+
+.footer {
+    position: absolute;
+    height: 2rem;
+    bottom: 0;
+    width: 100vw;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    background: #00295A;
+    font-family: "Filson Soft";
+    font-weight: lighter;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-bottom: 0px;
+    margin-top: 10vh;
+
+}
+
