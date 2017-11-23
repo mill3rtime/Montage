@@ -20,8 +20,36 @@
 
 }
 
-/*onboarding styles*/
 
+body {
+    overflow-x: hidden !important;
+}
+
+
+
+/*onboarding styles*/
+#list-container {
+
+    overflow-x: scroll;
+    overflow-y:hidden;
+    width:100vw;
+    height: 60vh
+    white-space: nowrap;
+    background-color: darkgray;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+}
+
+
+
+.item{
+    width: 50vw;
+    height: auto;
+    margin-right:100vw;
+    position:relative;
+    background-color: aqua;
+    display:inline-block;
+}
 
 .styled-card {
     box-shadow: 6px 6px 12px 0 rgba(0,0,0,0.35);
@@ -57,11 +85,62 @@
     margin-bottom: 3vh;
 }
 
+.card-text {
+
+}
 
 
+#plus {
+    height: 6vh;
+    width:auto;  }
 /* Rectangle 11: */
 /* Whom is this Montage: */
 
+
+.action-text {
+}
+
+
+
+
+/*ONBOARDING + SLIDER*/
+
+#main-row {
+
+    margin-top: 30rem;
+    width:80vw;
+    height:75vh;
+}
+
+#my-container{
+    width:340px;
+    height:50px;
+}
+
+
+
+.list{
+    background:grey;
+    min-width:1400px;
+}
+
+
+#arrowR{
+    background:black;
+    width:7rem;
+    height:auto;
+    cursor:pointer;
+    color: white;
+}
+
+
+#arrowL{
+    background:black;
+    width:7rem;
+    height:auto;
+    cursor:pointer;
+    color: white;
+}
 
 
 
@@ -382,7 +461,7 @@ p{
 @media (max-width: 575px) {
     #big-items {
         visibility: hidden;
-    #
+
     }
 }
 
