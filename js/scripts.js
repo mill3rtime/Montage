@@ -4,19 +4,23 @@ $(document).ready(function() {
         visible = 1, //Set the number of items that will be visible
         index = 0, //Starting index
         endIndex = ( $item.length / visible ) - 1; //End index
-
+        multi =.86
+        
     $('#arrowR').click(function(){
-        if(index < endIndex ){
-            index++;
-            $item.animate({'left':'-=700px'});
-        }
+
+    var width = jQuery(window).width();
+        
+    $item.animate({left:'-='+(width*multi)});
+    multi = multi * 1.08
+    
     });
 
     $('#arrowL').click(function(){
-        if(index > 0){
-            index--;
-            $item.animate({'left':'+=700px'});
-        }
+    var width = jQuery(window).width();
+
+        $item.animate({left:'+='+(width*multi)});
+    multi = multi * 1.08
+
     });
 
 });

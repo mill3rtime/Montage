@@ -25,6 +25,11 @@ body {
     overflow-x: hidden !important;
 }
 
+#main-contain{
+    background-size: cover
+width:  100%;
+}
+
 
 
 /*onboarding styles*/
