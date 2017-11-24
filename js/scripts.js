@@ -1,6 +1,13 @@
 
 
 
+/*local storage user info*/
+var IntroItem = null;
+var nameInput = "TBD";
+var dateInput = "TBD";
+var placeInput = "TBD";
+
+
 /*paths for replacing status bar images*/
 var sb1 = "images/sb/sb1.png";
 var sb2 = "images/sb/sb2.png";
@@ -20,10 +27,36 @@ $(document).ready(function() {
     $(".next-card").click(changeProgress);
 
 
+    // $(".add-now").click(introDone);  adds input info to global variables
+
+
+$(".get-onboarding").click(function(){
+
+        alert("fire");
+
+if (($(this).attr('id') == "name-1") || ($(this).attr('id') == "name-2")) {
+nameInput = $("#name-v").val();
+alert("name true");
+}
+
+if (($(this).attr('id') == "date-1") || ($(this).attr('id') == "date-2")) {
+alert("date true");
+
+
+dateInput = $("#date-v").val();
+}
+
+if (($(this).attr('id') == "place-1") || ($(this).attr('id') == "place-2")) {
+alert("place true");
+
+placeInput = $("#place-v").val();
+}
+ 
+
+});
 });
 
-
-function nextCard() {
+function nextCard(){
 
     var $item = $('.item');
     var buttonId = $(this).attr("id");
@@ -39,18 +72,49 @@ function nextCard() {
         
     $item.animate({left:'+='+(width*0.07)},"fast"); 
     $item.animate({left:'-='+(width*1.07)},"slow");
-    /*$item.animate({left:'-='+(width)},"slow");*/
-
-    
-    
     }
 
-    function changeProgress() {
+    function changeProgress(){
 
             sbIndex++;
          if (sbIndex > 0) {
         $("#status-bar-img").attr("src", sbArray[(sbIndex-1)]);
+        $("#status-bar-img-2").attr("src", sbArray[(sbIndex-1)]);
+        $("#hide-status").css("display","-webkit-box");
 
     }
+}
+
+
+
+
+function introDone() {
+
+var introArray = {
+name: nameInput,
+date: dateInput,
+place: placeInput
+};
+
+localStorage.setItem("personInfo", JSON.stringify(introInfo));
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
