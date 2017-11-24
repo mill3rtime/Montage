@@ -15,23 +15,29 @@
     <script src="js/scripts.js"></script>
     <title>Montage</title>
 
-
-
-
 </head>
 <body>
 
 
 
-<div class="container-fluid no-gutters m-0 p-0" id="main-contain">
+<div class="container-fluid no-gutters m-0 p-0  id="main-contain">
 
-<div class="row mt-5 mx-auto justify-content-center">
-    <button type="button" class="justify-content-start btn-outline-primary" id="arrowL">left</button>
-    <button type="button" class="justify-content-end btn-outline-secondary" id="arrowR">right</button>
-</div>
+    <div class="row">
+        <div class="col-2 my-3 mx-3 align-self-center">
+            <a href ="./index.html">
+            <img src="images/logo.png" id="logo-1">
+            </a>
+        </div>
+        <div class="col-4 offset-2 align-self-center justify-items-center">
+            <img class="status-bar justify-content-center" id="status-bar-img" src=""> </div>
+    </div>
 
 
-<div class="row flex-nowrap viewer justify-content-start" id="list-container">
+
+    <!--end logo row-->
+
+    <div class="row flex-nowrap viewer justify-content-start mx-0 px-0" id="list-container">
+
 
 
     <article class="item card styled-card card-placement" id="c1">
@@ -39,9 +45,9 @@
             <img class="card-img" src="images/1card-logo.png">
         </div > <!--row image-->
         <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="card-text text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
+            <p class="text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
         </div>
-        <div class="row justify-content-center"> <!--start action-->
+        <div class="next-card row justify-content-center"> <!--start action-->
             <img class="align-self-center" src= "images/plus.png" id="plus">
             <p class="my-auto action-text">Create a New Montage</p>
         </div > <!-- start action image-->
@@ -51,52 +57,72 @@
 
     <article class="item card styled-card card-placement" id="c2">
         <div class="row justify-content-center"> <!--row image-->
-            <img class="card-img" src="images/1card-logo.png">
+            <img class="card-img" src="images/2person.png">
         </div > <!--row image-->
         <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="card-text text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
+            <p class="card-text text-center  px-5">Whom is this Montage all about?
+                It can be about you!</p>
         </div>
-        <div class="row justify-content-center"> <!--start action-->
-            <input type="text" value="type first and last name"><p class="input--user-info">Create a New Montage</p>
-        </div > <!-- start action image-->
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <form class="form-inline">
+                <input class="input-user-info text-center px-3 py-1" type="text" id="fname" name="firstname" placeholder="first and name last name">
+        </div >
+        <div class="row my-3 justify-content-center"> <!--start action-->
+                <button class="intro-btn next-card get-started text-center align-self-end" id="btn-c2" type="button">Next</button>
+        </div>
+        <div class=" next-card card-footer mobile-footer align-content-center p-0 m-0">
+            <p class="mt-2">Next</p>
+        </div>
     </article>
 
-
-
-
-
-
-
-
-    <article class="item card styled-card card-placement">
+    <article class="item card styled-card card-placement" id="c3">
         <div class="row justify-content-center"> <!--row image-->
-            <img class="card-img" src="images/1card-logo.png">
+            <img class="card-img" src="images/3birth.png">
         </div > <!--row image-->
         <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="card-text text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
+            <p class="intro-btn card-text text-center  px-5">When were they born?<br>Approximate dates are fine.</p>
         </div>
-        <div class="row justify-content-center"> <!--start action-->
-            <img class="align-self-center" src= "images/plus.png" id="plus">
-            <p class="my-auto action-text">Create a New Montage</p>
-        </div > <!-- start action image-->
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <form class="form-inline">
+                <input class="input-user-info text-center px-3 py-1" type="text" id="fname" name="firstname" placeholder="date of birth">
+        </div >
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <button class="next-card get-started text-center align-self-end" type="button">Next</button>
+        </div>
     </article>
 
-
-
-    <article class="item card styled-card card-placement">
+    <article class="item card styled-card card-placement" id="c4">
         <div class="row justify-content-center"> <!--row image-->
-            <img class="card-img" src="images/1card-logo.png">
+            <img class="card-img" src="images/4location.png">
         </div > <!--row image-->
         <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="card-text text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
+            <p class="card-text text-center  px-5">Where did they grow up?<br>You can add more places later.</p>
         </div>
-        <div class="row justify-content-center"> <!--start action-->
-            <img class="align-self-center" src= "images/plus.png" id="plus">
-            <p class="my-auto action-text">Create a New Montage</p>
-        </div > <!-- start action image-->
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <form class="form-inline">
+                <input class="input-user-info text-center px-3 py-1" type="text" id="fname" name="firstname" placeholder="city or country">
+        </div >
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <button class="intro-btn next-card get-started text-center align-self-end" type="button">Next</button>
+        </div>
     </article>
+
+
+
+    <article class="item card styled-card card-placement" id="c5">
+        <div class="row justify-content-center"> <!--row image-->
+            <img class="card-img" src="images/5done.png">
+        </div > <!--row image-->
+        <div class="row text-center justify-content-center">  <!--row text-->
+            <p class="intro-btn card-text text-center  px-5">Nice work! <br> Now you can see the start of your Montage</p>
+        </div>
+
+        <div class="row my-3 justify-content-center"> <!--start action-->
+            <button class="intro-btn next-card get-started text-center align-self-end" type="button">Done</button>
+        </div>
+    </article>
+
 </div> <!-- list container-->
-
 
 </div > <!-- page container-->
 
