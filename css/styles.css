@@ -328,6 +328,7 @@ p{
 #hero-image {
     height: 65vh;
     width: 100vw;
+    max-width: 100%;
     background: url("../images/hero_wide.jpg") no-repeat center center;
     background-size: cover;
     margin-bottom: 8rem;
@@ -716,7 +717,7 @@ max-width: 20vw;
 }
 
 #nav-span{
-    width:100vw;
+    width:100%;
     height: auto;
 }
 
@@ -735,9 +736,24 @@ max-width: 20vw;
 
 @media (max-width: 575px) {
     #big-items {
-        visibility: hidden;
+        /*visibility: hidden;*/
+        /* Login to Account: */
+        font-family: FilsonSoft;
+        font-weight: lighter;
+        font-size: 36px;
+        color: #7ED321 !important;
+        letter-spacing: 0;
 
     }
+}
+
+.navbar-nav li {
+    display:inline-block;
+    list-style-type:none;
+    text-align:center;
+    max-width:10%;
+    background-color: white;
+    color:#7ED321!important;
 }
 
 

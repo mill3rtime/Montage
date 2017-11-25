@@ -27,6 +27,13 @@ $(document).ready(function() {
     $(".add-now").click(introDone);  //adds input info to global variables
 
 
+    $("#nav-span").click(function (){
+        changeMenu();
+
+    });
+
+
+
 
 $(".get-onboarding").click(function(){
 if (($(this).attr('id') == "name-1") || ($(this).attr('id') == "name-2")) {
@@ -96,14 +103,31 @@ $(".result-date").empty();
 $(".result-date").append(infoFromStorage.date);
 
 $(".result-place").empty();
-$(".result-place").append(infoFromStorage.place);
-
-
-
-
+$(".result-place").append("born"+infoFromStorage.place);
 }
 
 
+function changeMenu() {
+
+var size = "120%";
+
+
+$("#m1").css({ 'color': '#7ED321', 'font-size': size });
+
+$("#m2").css({ 'color': '#7ED321', 'font-size': size });
+
+
+$("#m3").text('Login');
+$("#m3").css({ 'color': '#7ED321', 'font-size': size, 'background':'none' });
+
+
+$("#m4").text('Contact Us');
+$("#m4").css({ 'color': '#7ED321', 'font-size': size, 'background':'none' });
+
+// $(".result-name").append(infoFromStorage.name);
+
+
+}
 
 
 
