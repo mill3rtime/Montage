@@ -20,62 +20,39 @@ var sbIndex = 0;/* inital position for cycling through status bar array*/
 
 $(document).ready(function() {
 
-    console.log(sbIndex);
 
 
     $(".next-card").click(nextCard);
     $(".next-card").click(changeProgress);
-
-
-    // $(".add-now").click(introDone);  adds input info to global variables
+    $(".add-now").click(introDone);  //adds input info to global variables
 
 
 $(".get-onboarding").click(function(){
-
-        alert("fire");
-
 if (($(this).attr('id') == "name-1") || ($(this).attr('id') == "name-2")) {
 nameInput = $("#name-v").val();
-alert("name true");
 }
-
 if (($(this).attr('id') == "date-1") || ($(this).attr('id') == "date-2")) {
-alert("date true");
-
-
 dateInput = $("#date-v").val();
 }
 
 if (($(this).attr('id') == "place-1") || ($(this).attr('id') == "place-2")) {
-alert("place true");
-
 placeInput = $("#place-v").val();
 }
- 
-
 });
 });
 
 function nextCard(){
-
     var $item = $('.item');
     var buttonId = $(this).attr("id");
-    
 
     multi =1;
-
     var c1 = $("#c1");
-         
-    var width = c1.outerWidth(true);
-
-    console.log(width);
-        
+    var width = c1.outerWidth(true);        
     $item.animate({left:'+='+(width*0.07)},"fast"); 
     $item.animate({left:'-='+(width*1.07)},"slow");
     }
 
     function changeProgress(){
-
             sbIndex++;
          if (sbIndex > 0) {
         $("#status-bar-img").attr("src", sbArray[(sbIndex-1)]);
@@ -90,15 +67,24 @@ function nextCard(){
 
 function introDone() {
 
+    alert('fire');
+
 var introArray = {
 name: nameInput,
 date: dateInput,
 place: placeInput
 };
 
-localStorage.setItem("personInfo", JSON.stringify(introInfo));
+localStorage.setItem("personInfo", JSON.stringify(introArray));
+
+// var cartInStorage = JSON.parse(localStorage.getItem("storageCart"));
+
+alert(localStorage.personInfo);
 
 }
+
+
+
 
 
 
