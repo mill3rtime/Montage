@@ -27,6 +27,7 @@ $(document).ready(function() {
     $(".add-now").click(introDone);  //adds input info to global variables
 
 
+
 $(".get-onboarding").click(function(){
 if (($(this).attr('id') == "name-1") || ($(this).attr('id') == "name-2")) {
 nameInput = $("#name-v").val();
@@ -67,7 +68,7 @@ function nextCard(){
 
 function introDone() {
 
-    alert('fire');
+    // alert('fire');
 
 var introArray = {
 name: nameInput,
@@ -77,14 +78,30 @@ place: placeInput
 
 localStorage.setItem("personInfo", JSON.stringify(introArray));
 
-// var cartInStorage = JSON.parse(localStorage.getItem("storageCart"));
-
-alert(localStorage.personInfo);
+// alert(localStorage.personInfo);
 
 }
 
 
+function createResult() {
 
+ var infoFromStorage = JSON.parse(localStorage.getItem("personInfo"));
+
+
+
+$(".result-name").empty();
+$(".result-name").append(infoFromStorage.name);
+
+$(".result-date").empty();
+$(".result-date").append(infoFromStorage.date);
+
+$(".result-place").empty();
+$(".result-place").append(infoFromStorage.place);
+
+
+
+
+}
 
 
 

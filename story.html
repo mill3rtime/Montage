@@ -20,7 +20,7 @@
 
 
 </head>
-<body>
+<body onload = "createResult()">
 
 <div class="container-fluid" id="result-contain">
 
@@ -34,11 +34,13 @@
     <!--mobile header-->
     <div>
         <div class="row mt-0 pt-0 hidden-md-up justify-content-center">
-            <img src="images/stripe-dark.png">
+            <img class="top-stripe" src="images/stripe-dark.png">
         </div>
 
         <div class="row mt-3 hidden-md-up justify-content-center">
-            <img src="images/logo.png">
+            <a href ="./index.html">
+                <img src="images/logo.png">
+            </a>
         </div>
 
     <div class= "col styled-card-1 justify-content-start mt-3 pt-4" id="result-card">
@@ -72,8 +74,8 @@
         </div>
 
         <div class="d-flex flex-column text-left">
-            <p class="result-name mb-0"> Alan Rickman</p>
-            <p class="result-date"> born 1950</p>
+            <p class="result-name mb-0"></p>
+            <p class="result-date"></p>
             <img id ="small-plus"
                  src="images/add-photo.png">
         </div>
@@ -86,7 +88,7 @@
 
             <!--PCH IMAGE for MOBILE-->
                 <div class="hidden-md-up mt-4">
-                    <p class ="result-place">  Los Angeles, CA </p>
+                    <p class ="result-place"></p>
                     <img class ="result-images align-self-end"
                          src="images/pch-2.jpg">
 
@@ -99,8 +101,8 @@
 
             <div class= "d-flex flex-row justify-content-start result-box" id="">
                 <div class="col result-images">
-                    <p class="mx-auto result-name"> Alan Rickman</p>
-                    <p class="mx-auto result-date"> born 1950</p>
+                    <p class="mx-auto result-name"></p>
+                    <p class="mx-auto result-date"></p>
                     <img class ="result-images align-self-end"
                          src="images/add-photo.png">
                 </div>
@@ -109,7 +111,7 @@
                 <div class="hidden-sm-down">
                     <img class ="result-images align-self-end "
                          src="images/pch-2.jpg">
-                    <p class ="result-place"> Los Angeles, CA </p>
+                    <p class ="result-place"></p>
                 </div>
 
             </div>

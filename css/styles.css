@@ -137,7 +137,7 @@ width:  100%;
 @media (max-width: 575px){
 
     #result-card {
-        width: 90vw;
+        width: 86vw;
         margin-left: 3vw;
         min-height: 70vh;
 
@@ -430,6 +430,10 @@ max-width: 20vw;
     display: block;
 }
 
+
+.top-stripe {
+    width:100%;
+}
 
 .service-images {
     margin-bottom: 2rem;
@@ -768,3 +772,21 @@ max-width: 20vw;
 
 }
 
+a:link {
+    color: white;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+}
+
+/* selected link */
+a:active {
+    color: white;
+}
