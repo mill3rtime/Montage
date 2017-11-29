@@ -34,8 +34,8 @@ body {
 
 
 #main-contain{
-    background-size: cover
-width:  100%;
+    background-size: cover;
+width:  100%!important;
 }
 
 
@@ -87,7 +87,7 @@ width:  100%;
     margin-top: 2rem;
 }
 
-/*card placement for mobile*/
+/**/
 @media (min-width: 575px) {
     .card-placement {
         margin-left: 4vw;
@@ -110,6 +110,10 @@ width:  100%;
     min-height: 60vh;
     min-width: 85vw
     margin-top: 2rem;
+}
+
+.div-link {
+    display:block;
 }
 
 #result-contain {
@@ -177,6 +181,9 @@ width:  100%;
 
 }
 
+
+
+
 @media (min-width: 576px) {
 
     .mobile-footer{
@@ -184,6 +191,9 @@ width:  100%;
     }
 
 }
+
+
+
 
 @media (max-width: 575px) {
 .intro-btn {
@@ -202,6 +212,9 @@ width:  100%;
 
 
 }
+
+
+
 
 
 #plus {
@@ -251,6 +264,24 @@ width:  100%;
 }
 
 
+#arrowR{
+    background:black;
+    width:7rem;
+    height:auto;
+    cursor:pointer;
+    color: white;
+}
+
+
+#arrowL{
+    background:black;
+    width:7rem;
+    height:auto;
+    cursor:pointer;
+    color: white;
+}
+
+
 
 
 
@@ -285,7 +316,7 @@ p{
 #hero-image {
     height: 65vh;
     width: 100vw;
-    max-width: 100%;
+    max-width: 100% !important;
     background: url("../images/hero_wide.jpg") no-repeat center center;
     background-size: cover;
     margin-bottom: 8rem;
@@ -294,6 +325,7 @@ p{
 #hero-2 {
     height: 65vh;
     width: 100vw;
+    max-width: 100%;
     background: url("../images/phone_wide.jpg") no-repeat center center;
     background-size: cover;
 }
@@ -363,12 +395,14 @@ max-width: 20vw;
         width: 100vw;
 
 
+
     }
 }
     @media (max-width: 575px) {
         #hero-text-box {
             height: 65vh;
             width: 100vw;
+            max-width: 100%;
 
         }
 
@@ -672,6 +706,11 @@ max-width: 20vw;
 
 #big-items{
     margin-bottom: 4rem;
+}
+
+@media max-width:575px {
+    width: 100%;
+    height:auto;
 }
 
 #nav-span{
