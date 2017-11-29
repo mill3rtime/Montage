@@ -475,7 +475,6 @@ max-width: 20vw;
 
 }
 
-
 @media (max-width: 575px) {
 
 
@@ -784,6 +783,8 @@ max-width: 20vw;
     margin-top: 10vh;
 
 }
+
+
 
 a:link {
     color: white;

@@ -78,7 +78,7 @@ $(".result-name").append(infoFromStorage.name);
 $(".result-date").empty();
 $(".result-date").append(infoFromStorage.date);
 $(".result-place").empty();
-$(".result-place").append('born' + infoFromStorage.place);
+$(".result-place").append('born: ' + infoFromStorage.place);
 }
 
 
