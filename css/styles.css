@@ -17,29 +17,21 @@
     font-family: "Filson Soft";
     src: url("../fonts/FilsonSoft-Light.otf");
     font-weight: lighter;
-
 }
-
-
 body {
     overflow-x: hidden !important;
 }
 
-/*story results page*/
-.result-square {
 
+/*STORY/RESULTS PAGE STYLES*/
+.result-square {
     max-height: 10vh;
 }
-
 
 #small-plus {
     width:12vw;
 }
 
-
-.next{
-
-}
 
 #main-contain{
     background-size: cover
@@ -47,9 +39,10 @@ width:  100%;
 }
 
 
+/*ONBOARDING STYLES*/
 
-/*onboarding styles*/
 #list-container {
+    /*main container below hero image in index.html*/
 
     overflow-x: scroll;
     overflow-y:hidden;
@@ -83,7 +76,6 @@ width:  100%;
     position: relative;
     width: 300px;
     color: #576258;
-
 }
 
 .card-placement {
@@ -95,11 +87,10 @@ width:  100%;
     margin-top: 2rem;
 }
 
+/*card placement for mobile*/
 @media (min-width: 575px) {
     .card-placement {
-
         margin-left: 4vw;
-
     }
 
 }
@@ -140,19 +131,12 @@ width:  100%;
         width: 86vw;
         margin-left: 3vw;
         min-height: 70vh;
-
     }
-
-
-
 }
-
-
 
 .result-box {
     max-width: 85%;
 }
-
 
 .results-row-2 {
     width: 100%;
@@ -193,9 +177,6 @@ width:  100%;
 
 }
 
-
-
-
 @media (min-width: 576px) {
 
     .mobile-footer{
@@ -203,9 +184,6 @@ width:  100%;
     }
 
 }
-
-
-
 
 @media (max-width: 575px) {
 .intro-btn {
@@ -224,9 +202,6 @@ width:  100%;
 
 
 }
-
-
-
 
 
 #plus {
@@ -273,24 +248,6 @@ width:  100%;
 .list{
     background:grey;
     min-width:1400px;
-}
-
-
-#arrowR{
-    background:black;
-    width:7rem;
-    height:auto;
-    cursor:pointer;
-    color: white;
-}
-
-
-#arrowL{
-    background:black;
-    width:7rem;
-    height:auto;
-    cursor:pointer;
-    color: white;
 }
 
 

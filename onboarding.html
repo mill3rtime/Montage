@@ -21,74 +21,75 @@
 
 
 <div class="container-fluid no-gutters m-0 p-0"  id="main-contain">
+    <!--main container for top part of page-->
 
+    <!--header with logo for desktop-->
     <div class="row hidden-sm-down" id="desktop-header">
         <div class="col-2 my-3 mx-3 align-self-center">
             <a href ="./index.html">
-            <img src="images/logo.png" id="logo-1">
+                <img src="images/logo.png" id="logo-1">
             </a>
         </div>
         <div class="col-4 offset-2 align-self-center justify-items-center">
             <img class="status-bar justify-content-center" id="status-bar-img" src=""> </div>
     </div>
 
-
+    <!--header for mobile screen (with logo and green bar at top-->
     <div  id="mobile-header">
         <div class="row mt-0 pt-0 hidden-md-up justify-content-center">
             <img class="top-stripe" src="images/stripe-dark.png" id="top-stripe">
         </div>
 
-<div class="row mt-3 hidden-md-up justify-content-center">
+        <div class="row mt-3 hidden-md-up justify-content-center">
             <img src="images/logo.png">
-</div>
-
-
+        </div>
+        <!--status bar to show progress of onboarding - MOBILE screens-->
         <div class="row mt-3 hidden-md-up justify-content-center" id="hide-status">
             <img class="status-bar justify-content-center" id="status-bar-img-2" src="">
         </div>
-
-
-
     </div>
     <!--end logo row-->
 
     <div class="row flex-nowrap viewer justify-content-start mx-0 px-0" id="list-container">
+        <!--card 1-->
+        <!--styled-card class has media breakpoints for mobile and desktop in all cards-->
+        <article class="item card styled-card card-placement mt-5 mt-s-0 " id="c1"> <!--use my auto with a higher max width to adjust layout-->
+            <div class="row justify-content-center"> <!--row image-->
+                <img class="card-img" src="images/1card-logo.png">
+            </div > <!--row image-->
+            <div class="row text-center justify-content-center">  <!--row text-->
+                <p class="text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
+            </div>
+            <div class="next-card row justify-content-center"> <!--start action-->
+                <img class="align-self-center" src= "images/plus.png" id="plus">
+                <p class="my-auto action-text">Create a New Montage</p>
+            </div > <!-- start action image-->
+        </article>
 
-    <article class="item card styled-card card-placement mt-5 mt-s-0 " id="c1"> <!--use my auto with a higher max width to adjust layout-->
-        <div class="row justify-content-center"> <!--row image-->
-            <img class="card-img" src="images/1card-logo.png">
-        </div > <!--row image-->
-        <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="text-center  px-5">In just a few steps, you will see your loved one’s legacy start to come to life.</p>
-        </div>
-        <div class="next-card row justify-content-center"> <!--start action-->
-            <img class="align-self-center" src= "images/plus.png" id="plus">
-            <p class="my-auto action-text">Create a New Montage</p>
-        </div > <!-- start action image-->
-    </article>
 
-
-
-    <article class="item card styled-card card-placement my-auto" id="c2">
-        <div class="row justify-content-center"> <!--row image-->
-            <img class="card-img" src="images/2person.png">
-        </div > <!--row image-->
-        <div class="row text-center justify-content-center">  <!--row text-->
-            <p class="card-text text-center  px-5">Whom is this Montage all about?
-                It can be about you!</p>
-        </div>
-        <div class="row my-3 justify-content-center"> <!--start action-->
-            <form class="form-inline">
-                <input class="input-user-info text-center px-3 py-1" type="text" id="name-v" name="firstname" placeholder="first and name last name">
-            </form>
-        </div >
-        <div class="row my-3 justify-content-center"> <!--start action-->
+        <!--card 2 name-->
+        <article class="item card styled-card card-placement my-auto" id="c2">
+            <div class="row justify-content-center"> <!--row image-->
+                <img class="card-img" src="images/2person.png">
+            </div > <!--row image-->
+            <div class="row text-center justify-content-center">  <!--row text-->
+                <p class="card-text text-center  px-5">Whom is this Montage all about?
+                    It can be about you!</p>
+            </div>
+            <div class="row my-3 justify-content-center"> <!--start action-->
+                <form class="form-inline">
+                    <input class="input-user-info text-center px-3 py-1" type="text" id="name-v" name="firstname" placeholder="first and name last name">
+                </form>
+            </div >
+            <div class="row my-3 justify-content-center"> <!--start action-->
                 <button class="get-onboarding intro-btn next-card get-started text-center align-self-end" id="name-2" type="button">Next</button>
-        </div>
-        <div class="get-onboarding next-card card-footer mobile-footer align-content-center p-0 m-0" id="name-1">
-            <p class="mt-2">Next</p>
-        </div>
-    </article>
+            </div>
+            <div class="get-onboarding next-card card-footer mobile-footer align-content-center p-0 m-0" id="name-1">
+                <p class="mt-2">Next</p>
+            </div>
+        </article>
+
+        <!--card 3 date of birth-->
 
         <article class="item card styled-card card-placement my-auto" id="c3">
             <div class="row justify-content-center"> <!--row image-->
@@ -111,6 +112,7 @@
             </div>
         </article>
 
+        <!--card 4 birthplace-->
         <article class="item card styled-card card-placement my-auto" id="c4">
             <div class="row justify-content-center"> <!--row image-->
                 <img class="card-img" src="images/4location.png">
@@ -122,7 +124,8 @@
             <div class="row my-3 justify-content-center"> <!--start action-->
                 <form class="form-inline">
                     <input class="input-user-info text-center px-3 py-1" type="text" id="place-v" name="place" placeholder="enter city or country">
-            </div >
+                </form>
+            </div>
             <div class="row my-3 justify-content-center"> <!--start action-->
                 <button class="get-onboarding intro-btn next-card get-started text-center align-self-end" id="place-1" type="button">Next</button>
             </div>
@@ -131,7 +134,7 @@
             </div>
         </article>
 
-
+        <!--card 5 -->
         <article class="item card styled-card card-placement my-auto" id="c5">
             <div class="row justify-content-center"> <!--row image-->
                 <img class="card-img" src="images/5done.png">
@@ -141,22 +144,19 @@
             </div>
             <div class="row my-3 justify-content-center d-none"> <!--start action-->
                 <form class="form-inline">
-                    <input class="input-user-info text-center px-3 py-1" type="text" name="firstname" placeholder="first and name last name">
+                    <input class="input-user-info text-center px-3 py-1" type="text"> <!--this is here for spacing purposes-->
                 </form>
             </div >
             <div class="row my-3 justify-content-center"> <!--start action-->
                 <a href ="./story.html"> <button class="add-now intro-btn next-card get-started text-center align-self-end" id="btn-c2" type="button">Next</button></a>
             </div>
-
-            <a class= href ="./story.html">
-            <div class="add-now next-card card-footer mobile-footer align-content-center p-0 m-0" id="last-button">
-                 <p class="mt-2 mb-0">Done</p>
-            </div>
+            <a class= href="./story.html">
+                <div class="add-now next-card card-footer mobile-footer align-content-center p-0 m-0" id="last-button">
+                    <p class="mt-2 mb-0">Done</p>
+                </div>
             </a>
-
         </article>
-</div> <!-- list container-->
-
+    </div> <!-- list container-->
 </div > <!-- page container-->
 
 
